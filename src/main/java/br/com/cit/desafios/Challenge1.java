@@ -10,7 +10,9 @@ public class Challenge1 {
                 System.out.print("new message from branch 12");
                 return article;
             }
+            System.out.print("counting again");
         }
+        System.out.print("not found");
         return null;
     }
 
