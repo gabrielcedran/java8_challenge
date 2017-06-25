@@ -14,6 +14,6 @@ public class Challenge1 {
     }
 
     public static Article getFirstJavaArticle2(List<Article> articles) {
-        return articles.stream().filter(article -> article.getTags().contains("java")).findFirst().orElse(null);
+        return articles.stream().filter(article -> article.getTags().contains("java")).findFirst().orElseThrow(() -> new RuntimeException("not found"));
     }
 }
