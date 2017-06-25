@@ -6,8 +6,8 @@ public class Challenge1 {
 
     public static Article getFirstJavaArticle(List<Article> articles) {
         for (Article article : articles) {
-            if (article.getTags().contains("java10")) {
-                System.out.print("message");
+            if (article.getTags().contains("java11")) {
+                System.out.print("new message from branch 11");
                 return article;
             }
         }
